@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анти-мошенник | Защита от мошенничества</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="logo-text">Анти-мошенник</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Главный</a>
+                    <a href="#analyzer">Анти-мошенник</a>
+                    <a href="#advantages">О проекте</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Анти-мошенник</h1>
+            <p>Современная система защиты от мошенничества с использованием искусственного интеллекта для анализа сообщений. Определите, является ли сообщение мошенническим, создано ли оно с помощью ИИ или является спамом.</p>
+            <p class="highlight">Наша система анализирует текст и оценивает вероятность мошенничества с точностью до 94%, предоставляя персонализированные рекомендации.</p>
+            
+            <div class="action-buttons">
+                <a href="#analyzer" class="btn btn-primary">Проверить сообщение</a>
+                <a href="#advantages" class="btn btn-secondary">О проекте</a>
+                <a href="#instructions" class="btn btn-secondary">Инструкция</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="analyzer" id="analyzer">
+        <div class="container">
+            <h2 class="section-title">Анти-мошенник</h2>
+            <div class="analyzer-container">
+                <div class="input-group">
+                    <label for="message">Введите подозрительное сообщение для анализа:</label>
+                    <textarea id="message" placeholder="Вставьте сюда текст сообщения, которое хотите проверить..."></textarea>
+                </div>
+                <button class="analyze-btn" id="analyze-btn">
+                    <i class="fas fa-search"></i> Анализировать сообщение
+                </button>
+                
+                <div class="result" id="result">
+                    <h3>Результаты анализа</h3>
+                    <div class="result-item">
+                        <span>Вероятность мошенничества:</span>
+                        <span class="result-value" id="fraud-score">0%</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Создано с помощью ИИ:</span>
+                        <span class="result-value" id="ai-score">Не обнаружено</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Спам-потенциал:</span>
+                        <span class="result-value" id="spam-score">Низкий</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Общая оценка безопасности:</span>
+                        <span class="result-value" id="safety-score">Безопасно</span>
+                    </div>
+                    
+                    <div class="recommendations" id="recommendations">
+                        <h4><i class="fas fa-lightbulb"></i> Рекомендации по безопасности:</h4>
+                        <ul class="recommendation-list" id="recommendation-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему мы лучше конкурентов?</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Умные рекомендации</h3>
+                    <p>Наша система не только определяет угрозы, но и дает персонализированные рекомендации по действиям в зависимости от типа и уровня опасности.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Мгновенная проверка</h3>
+                    <p>Анализ сообщения занимает менее 2 секунд. Вы получаете результат моментально, что критически важно при общении с потенциальными мошенниками.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Двойная защита</h3>
+                    <p>Наш сервис доступен как через сайт, так и через Telegram-бота. Даже без доступа к сайту вы можете проверить сообщение через нашего бота.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Постоянное обучение</h3>
+                    <p>Наша нейросеть постоянно обучается на новых данных, что позволяет ей адаптироваться к меняющимся методам мошенников и сохранять высокую точность.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Конфиденциальность</h3>
+                    <p>Мы не храним ваши сообщения после анализа. Все проверки происходят анонимно, без сохранения личных данных пользователей.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Простота использования</h3>
+                    <p>Интуитивно понятный интерфейс сайта и бота делает проверку сообщений доступной для пользователей любого уровня технической подготовки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="community" id="instructions">
+        <div class="container">
+            <h2 class="section-title">Инструкция по использованию</h2>
+            <p>Наш проект представлен в двух форматах: веб-сайт и Telegram-бот. Вы можете использовать любой из них в зависимости от ваших предпочтений и доступности.</p>
+            
+            <div class="telegram-info">
+                <h3><i class="fab fa-telegram"></i> Telegram-бот</h3>
+                <p>Бот доступен в Telegram и может помочь, даже если у вас нет доступа к сайту. Он выполняет те же функции анализа сообщений на мошенничество, спам и определение текстов, созданных ИИ.</p>
+                
+                <h4>Как использовать бота:</h4>
+                <ul>
+                    <li>Найдите бота в Telegram по имени @antimoshennik_bot или перейдите по ссылке: <a href="https://t.me/fraudster_detective_bot" class="linkBot"> <b> Antimoshennik.bot </b> </a> </li>
+                    <li>Отправьте боту подозрительное сообщение</li>
+                    <li>Получите развернутый анализ с оценками рисков и рекомендациями</li>
+                    <li>Используйте команду /help для получения списка доступных команд</li>
+                    <li>Бот также может анализировать скриншоты с текстом (OCR-анализ)</li>
+                </ul>
+            </div>
+            
+            <h3 style="margin-top: 40px;">Инструкция для сайта:</h3>
+            <div class="advantages-grid" style="margin-top: 30px;">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3>Шаг 1</h3>
+                    <p>Перейдите в раздел "Анти-мошенник" или прокрутите страницу до поля ввода текста.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-paste"></i>
+                    </div>
+                    <h3>Шаг 2</h3>
+                    <p>Вставьте подозрительное сообщение в текстовое поле. Можно анализировать SMS, email, сообщения из соцсетей.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Шаг 3</h3>
+                    <p>Нажмите кнопку "Анализировать сообщение" и дождитесь результатов. Обычно анализ занимает 1-2 секунды.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Шаг 4</h3>
+                    <p>Изучите результаты анализа и рекомендации. Система покажет вероятность мошенничества, наличие ИИ-генерации, спам-потенциал и даст конкретные советы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О проекте</h3>
+                    <p>Анти-мошенник - это система защиты от цифрового мошенничества, использующая искусственный интеллект для анализа сообщений и выявления подозрительных активностей.</p>
+                    <p>Проект разработан в 2026 году для борьбы с растущим количеством онлайн-мошенничеств.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Наши возможности</h3>
+                    <ul>
+                        <li>Определение мошеннических сообщений</li>
+                        <li>Выявление текстов, созданных ИИ</li>
+                        <li>Анализ спам-потенциала</li>
+                        <li>Персонализированные рекомендации</li>
+                        <li>Доступ через сайт и Telegram-бота</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Для чего разработан?</h3>
+                    <p>Проект разработан для обеспечения цифровой безопасности пользователей.</p>
+                    <p>Используйте наш сервис для проверки подозрительных сообщений и защиты от мошенников.</p>
+                </div>
+            </div>
+            
+            <div class="authors">
+                <p><strong>Автор сайта:</strong> Зубарев Богдан Денисович</p>
+                <p><strong>Авторы Telegram-бота:</strong> Зубарев Богдан Денисович и Плотников Тимофей Алексеевич</p>
+                <p>Проект создан в 2026 году</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/classifiers.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

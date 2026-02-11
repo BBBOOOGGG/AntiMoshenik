@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анти-мошенник | Защита от мошенничества</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="logo-text">Анти-мошенник</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Главный</a>
+                    <a href="#analyzer">Анти-мошенник</a>
+                    <a href="#advantages">О проекте</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Анти-мошенник</h1>
+            <p>Современная система защиты от мошенничества с использованием искусственного интеллекта для анализа сообщений. Определите, является ли сообщение мошенническим, создано ли оно с помощью ИИ или является спамом.</p>
+            <p class="highlight">Наша система анализирует текст и оценивает вероятность мошенничества с точностью до 94%, предоставляя персонализированные рекомендации.</p>
+            
+            <div class="action-buttons">
+                <a href="#analyzer" class="btn btn-primary">Проверить сообщение</a>
+                <a href="#advantages" class="btn btn-secondary">О проекте</a>
+                <a href="#instructions" class="btn btn-secondary">Инструкция</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="analyzer" id="analyzer">
+        <div class="container">
+            <h2 class="section-title">Анти-мошенник</h2>
+            <div class="analyzer-container">
+                <div class="input-group">
+                    <label for="message">Введите подозрительное сообщение для анализа:</label>
+                    <textarea id="message" placeholder="Вставьте сюда текст сообщения, которое хотите проверить..."></textarea>
+                </div>
+                <button class="analyze-btn" id="analyze-btn">
+                    <i class="fas fa-search"></i> Анализировать сообщение
+                </button>
+                
+                <div class="result" id="result" style="display: none;">
+                    <h3>Результаты анализа</h3>
+                    <div class="result-item">
+                        <span>Вероятность мошенничества:</span>
+                        <span class="result-value" id="fraud-score">0%</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Создано с помощью ИИ:</span>
+                        <span class="result-value" id="ai-score">Не обнаружено</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Спам-потенциал:</span>
+                        <span class="result-value" id="spam-score">Низкий</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Общая оценка безопасности:</span>
+                        <span class="result-value" id="safety-score">Безопасно</span>
+                    </div>
+                    
+                    <div class="recommendations" id="recommendations" style="display: none;">
+                        <h4><i class="fas fa-lightbulb"></i> Рекомендации по безопасности:</h4>
+                        <ul class="recommendation-list" id="recommendation-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+        <!-- Содержимое секции осталось без изменений -->
+        <div class="container">
+            <h2 class="section-title">Почему мы лучше конкурентов?</h2>
+            <div class="advantages-grid">
+                <!-- Карточки преимуществ -->
+            </div>
+        </div>
+    </section>
+
+    <section class="community" id="instructions">
+        <!-- Содержимое секции осталось без изменений -->
+        <div class="container">
+            <h2 class="section-title">Инструкция по использованию</h2>
+            <!-- Инструкции -->
+        </div>
+    </section>
+
+    <footer>
+        <!-- Содержимое футера осталось без изменений -->
+        <div class="container">
+            <!-- Авторы и информация -->
+        </div>
+    </footer>
+
+    <!-- Подключаем JavaScript файлы в правильном порядке -->
+    <script src="js/database.js"></script>
+    <script src="js/classifiers.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
